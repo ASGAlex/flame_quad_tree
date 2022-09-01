@@ -37,6 +37,7 @@ mixin CollisionQuadTreeController<T extends HasQuadTreeCollisionDetection>
   Future<void>? add(Component component) {
     final result = super.add(component);
     if (component is ShapeHitbox) {
+      // ignore: prefer_function_declarations_over_variables
       final listener = () {
         (this as HasGameRef<T>).gameRef.scheduleHitboxUpdate(component);
       };

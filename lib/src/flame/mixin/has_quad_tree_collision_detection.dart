@@ -2,7 +2,6 @@ import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/extensions.dart';
 import 'package:flame/game.dart';
-import 'package:flutter/widgets.dart';
 
 import '../collision_detection.dart';
 import 'collision_controller.dart';

@@ -1,13 +1,15 @@
 name: flame_quad_tree
 description: Quad tree collision detection algorithm support for Flame
 version: 1.0.0
-# homepage: https://www.example.com
+homepage: https://github.com/ASGAlex/flame_quad_tree
 
 environment:
   sdk: '>=2.17.6 <3.0.0'
 
 dependencies:
   flame: ^1.2.1
+  flutter:
+    sdk: flutter
 
 dev_dependencies:
   lints: ^2.0.0
