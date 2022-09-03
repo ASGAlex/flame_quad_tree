@@ -61,6 +61,18 @@ class TestGameStandard extends BaseGame with HasCollisionDetection {
     add(FpsTextComponent());
     camera.zoom = 1;
   }
+
+  final ems = <double>[];
+
+  @override
+  void update(double dt) {
+    final sw = Stopwatch()..start();
+    super.update(dt);
+    sw.stop();
+    ems.add(sw.elapsedMicroseconds.toDouble());
+    print(
+        "updateTree: ${(ems.reduce((value, element) => value + element) / ems.length)}, length: ${ems.length}");
+  }
 }
 
 class TestGameQuadTree extends BaseGame with HasQuadTreeCollisionDetection {
@@ -117,6 +129,18 @@ class TestGameQuadTree extends BaseGame with HasQuadTreeCollisionDetection {
     add(LayerComponent(staticLayer));
     add(FpsTextComponent());
     camera.zoom = 1;
+  }
+
+  final ems = <double>[];
+
+  @override
+  void update(double dt) {
+    final sw = Stopwatch()..start();
+    super.update(dt);
+    sw.stop();
+    ems.add(sw.elapsedMicroseconds.toDouble());
+    print(
+        "updateTree: ${(ems.reduce((value, element) => value + element) / ems.length)}, length: ${ems.length}");
   }
 }
 

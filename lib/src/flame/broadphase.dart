@@ -101,7 +101,6 @@ class QuadTreeBroadphase<T extends Hitbox<T>> extends Broadphase<T> {
         }
       }
     }
-    // print("P: ${potentials.length}");
     return potentials;
   }
 

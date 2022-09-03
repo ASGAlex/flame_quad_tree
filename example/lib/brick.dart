@@ -14,7 +14,7 @@ class BrickQuadTree extends Brick
       required super.sprite});
 }
 
-class BrickStandard extends Brick {
+class BrickStandard extends Brick with UpdateOnce {
   BrickStandard(
       {required super.position,
       required super.size,
