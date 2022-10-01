@@ -1,6 +1,6 @@
 name: flame_quad_tree
 description: Quad tree collision detection algorithm support for Flame
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/ASGAlex/flame_quad_tree
 
 environment:

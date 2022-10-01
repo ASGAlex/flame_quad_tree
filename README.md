@@ -1,6 +1,12 @@
-Quad Tree algorithm implementation aimed to be used in Flame
+# Deprecated
+
+Now this library become a part of Flame engine.
+See [corresponding documentation section](https://github.com/flame-engine/flame/blob/main/doc/flame/collision_detection.md#quad-tree-broad-phase)
+at engine's documentation for actual usage instructions.
 
 ## Features
+
+Quad Tree algorithm implementation aimed to be used in Flame
 
 - Fully compatible with vanilla Flame
 - Allow to write custom broadphase checks for each type of component
